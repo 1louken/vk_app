@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vk_app/static/css/main.98b7211d.chunk.css",
-    "main.js": "/vk_app/static/js/main.a2edd642.chunk.js",
-    "main.js.map": "/vk_app/static/js/main.a2edd642.chunk.js.map",
+    "main.js": "/vk_app/static/js/main.aeb24909.chunk.js",
+    "main.js.map": "/vk_app/static/js/main.aeb24909.chunk.js.map",
     "runtime-main.js": "/vk_app/static/js/runtime-main.88a64463.js",
     "runtime-main.js.map": "/vk_app/static/js/runtime-main.88a64463.js.map",
     "static/css/2.a2ab3232.chunk.css": "/vk_app/static/css/2.a2ab3232.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.a2ab3232.chunk.css",
     "static/js/2.f0105b1d.chunk.js",
     "static/css/main.98b7211d.chunk.css",
-    "static/js/main.a2edd642.chunk.js"
+    "static/js/main.aeb24909.chunk.js"
   ]
 }
