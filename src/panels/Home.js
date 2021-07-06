@@ -7,10 +7,10 @@ const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>хуйня какая то</PanelHeader>
 
-		<Group header={<Header mode="secondary">'ты даун'</Header>}>
+		<Group header={<Header mode="secondary">бля</Header>}>
 			<Div>
 				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					'покажи свой персик)))))))'
+				покажи свой персик :D
 				</Button>
 			</Div>
 		</Group>
