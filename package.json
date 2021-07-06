@@ -2,12 +2,13 @@
   "name": "vk_app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://1louken.github.io/vk_app/",
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "vk-miniapps-deploy"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
