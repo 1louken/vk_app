@@ -7,19 +7,19 @@ import './Style.css';
 
 const osName = platform();
 
-const Top = props => (
+const Top_users = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
 		>
-			Top
+			Top_users
 		</PanelHeader>
 	</Panel>
 );
 
-Top.propTypes = {
+Top_users.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Top;
+export default Top_users;
