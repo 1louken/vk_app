@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import bridge from '@vkontakte/vk-bridge';
-import View from '@vkontakte/vkui/dist/components/View/View';
-import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
+import { View, ScreenSpinner, AdaptivityProvider, AppRoot } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
@@ -35,18 +34,19 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
-
 	return (
-		<View activePanel={activePanel} popout={popout}>
-			<Home id='home' fetchedUser={fetchedUser} go={go}/>
-			<Top id='top' go={go} />
-			<Trade id='trade' go={go}/>
-			<Business id='business' go={go}/>
-			<Shop id='shop' go={go}/>
-
-		</View>
+		<AdaptivityProvider>
+			<AppRoot>
+				<View activePanel={activePanel} popout={popout}>
+					<Home id='home' fetchedUser={fetchedUser} go={go}/>
+					<Top id='top' go={go} />
+					<Trade id='trade' go={go}/>
+					<Business id='business' go={go}/>
+					<Shop id='shop' go={go}/>
+				</View>
+			</AppRoot>
+		</AdaptivityProvider>
 	);
 }
 
 export default App;
-
