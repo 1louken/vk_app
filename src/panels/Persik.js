@@ -6,26 +6,14 @@ import { Panel, PanelHeader, Header, Button, Div, Group, PanelHeaderBack } from 
 const startParams = new URLSearchParams(window.location.search)
 const userId = startParams.get("vk_user_id")
 
-function send() {
-	bridge
-	  .send('VKWebAppGetEmail')
-	  .then(data => {
-	    // Обработка события в случае успеха
-	    console.log(data.email);
-	  })
-	  .catch(error => {
-	    // Обработка события в случае ошибки
-	  });
-	};
-
 const Persik = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}>Ваш id</PanelHeader>
 		<Group header={<Header mode="secondary">Ваш id: {userId} </Header>}>
 			<Div>
-				<Button stretched size="l" mode="secondary" onClick={send}>Уведомление</Button>
-			</Div>s
+				<Button stretched size="l" mode="secondary">Уведомление</Button>
+			</Div>
 		</Group>
 	</Panel>
 );

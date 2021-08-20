@@ -8,6 +8,10 @@ const Home = ({ id, go, fetchedUser }) => (
 		<PanelHeader>Узнать id страницы</PanelHeader>
 
 		<Group header={<Header mode="secondary"></Header>}>
+			<Div style={{display: 'flex'}}>
+       			<Button size="l" stretched style={{ marginRight: 8 }} onClick={go} data-to="persik">Узнать свой id</Button>
+       			<Button size="l" stretched mode="secondary">Кнопка</Button>
+     		</Div>
 			<Div>
 				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">Узнать свой id</Button>
 			</Div>
