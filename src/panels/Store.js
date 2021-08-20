@@ -7,6 +7,7 @@ const Store = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}>Магазин</PanelHeader>
+
 			<Div>
 				<Button stretched size="l" mode="secondary">Кнопка</Button>
 			</Div>
