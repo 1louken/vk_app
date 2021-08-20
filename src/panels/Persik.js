@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Panel, PanelHeader, PanelHeaderBack } from '@vkontakte/vkui';
+import { Panel, PanelHeader, Header, Group, PanelHeaderBack } from '@vkontakte/vkui';
 
-import persik from '../img/persik.png';
-import './Persik.css';
+const startParams = new URLSearchParams(window.location.search)
+const userId = startParams.get("vk_user_id")
 
 const Persik = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
 		>
-			пэрсик
+			Ваш id
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="персик: "/>
+
+
+		<Group header={<Header mode="secondary">Ваш id: {userId} </Header>}></Group>
 	</Panel>
 );
 

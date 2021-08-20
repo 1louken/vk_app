@@ -5,13 +5,11 @@ import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@v
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>хуйня какая то</PanelHeader>
+		<PanelHeader>Узнать id страницы</PanelHeader>
 
-		<Group header={<Header mode="secondary">бля</Header>}>
+		<Group header={<Header mode="secondary"></Header>}>
 			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-				покажи свой персик :D
-				</Button>
+				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">Узнать свой id</Button>
 			</Div>
 		</Group>
 	</Panel>
