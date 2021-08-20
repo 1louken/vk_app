@@ -11,9 +11,9 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group>
 			<Div style={{display: 'flex'}}>
-       			<Button size="l" stretched style={{ marginRight: 8 }} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">Меню</Button>
+       			<Button size="l" stretched style={{ marginRight: 8 marginLeft: 10}} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">Меню</Button>
        			<Button size="l" stretched style={{ marginRight: 8 }} stretched mode="secondary" before={<Icon28GraphOutline/>} onClick={go} data-to="top">Рейтинг</Button>
-       			<Button size="l" stretched style={{ fontSize: 15 }} stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">
+       			<Button size="l" stretched style={{ marginRight: 10 fontSize: 15 }} stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">
        				<Div style={{ fontSize: 15 }}>
        					Магазин
        				</Div>
