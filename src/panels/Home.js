@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Icon24StorefrontOutline, Icon24MenuOutline, Icon28GraphOutline } from '@vkontakte/icons'; 
+
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
 const Home = ({ id, go, fetchedUser }) => (
@@ -9,9 +11,13 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group header={<Header mode="secondary"></Header>}>
 			<Div style={{display: 'flex'}}>
-       			<Button size="l" stretched style={{ marginRight: 8 }} onClick={go} data-to="persik">Узнать свой id</Button>
-       			<Button size="l" stretched mode="secondary">Кнопка</Button>
+       			<Button size="l" stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="persik">Узнать свой id</Button>
+       			<Button size="l" stretched mode="secondary" before={<Icon28GraphOutline/>}>Кнопка</Button>
+       			<Button size="l" stretched mode="secondary" before={<Icon24StorefrontOutline/>}>Кнопка</Button>
      		</Div>
+     		<Div>
+				
+			</Div>
 			<Div>
 				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">Узнать свой id</Button>
 			</Div>
