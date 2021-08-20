@@ -9,18 +9,12 @@ const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Узнать id страницы</PanelHeader>
 
-		<Group header={<Header mode="secondary"></Header>}>
+		<Group>
 			<Div style={{display: 'flex'}}>
-       			<Button size="l" stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="persik">Узнать свой id</Button>
-       			<Button size="l" stretched mode="secondary" before={<Icon28GraphOutline/>}>Кнопка</Button>
-       			<Button size="l" stretched mode="secondary" before={<Icon24StorefrontOutline/>}>Кнопка</Button>
+       			<Button size="l" stretched style={{ marginRight: 8 }} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="persik">Меню</Button>
+       			<Button size="l" stretched style={{ marginRight: 8 }} stretched mode="secondary" before={<Icon28GraphOutline/>}>Рейтинг</Button>
+       			<Button size="l" stretched mode="secondary" before={<Icon24StorefrontOutline/>}>Магазин</Button>
      		</Div>
-     		<Div>
-				
-			</Div>
-			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">Узнать свой id</Button>
-			</Div>
 		</Group>
 	</Panel>
 );
