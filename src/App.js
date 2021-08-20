@@ -39,8 +39,8 @@ const App = () => {
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
 					<Menu id='menu' go={go} />
-					<Menu id='top' go={go} />
-					<Menu id='store' go={go} />
+					<Top id='top' go={go} />
+					<Store id='store' go={go} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>
