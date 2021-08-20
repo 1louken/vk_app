@@ -7,7 +7,7 @@ import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@v
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>Узнать id страницы</PanelHeader>
+		<PanelHeader>App</PanelHeader>
 
 		<Group>
 			<Div style={{display: 'flex'}}>
