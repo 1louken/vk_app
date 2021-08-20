@@ -6,21 +6,21 @@ import { Panel, PanelHeader, Header, Button, Div, Group, PanelHeaderBack } from 
 const startParams = new URLSearchParams(window.location.search)
 const userId = startParams.get("vk_user_id")
 
-const Persik = props => (
+const Menu = props => (
 	<Panel id={props.id}>
 		<PanelHeader
-			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}>Ваш id</PanelHeader>
+			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}>Меню</PanelHeader>
 		<Group header={<Header mode="secondary">Ваш id: {userId} </Header>}>
 			<Div>
-				<Button stretched size="l" mode="secondary">Уведомление</Button>
+				<Button stretched size="l" mode="secondary">Кнопка</Button>
 			</Div>
 		</Group>
 	</Panel>
 );
 
-Persik.propTypes = {
+Menu.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Menu;
