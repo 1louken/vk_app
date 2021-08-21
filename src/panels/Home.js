@@ -24,9 +24,9 @@ const Home = ({ id, go, fetchedUser }) => (
 
        		</Div>
        		<Div>
-       			<CellButton before={<Avatar shadow={false} size={40}><Icon24MenuOutline /></Avatar>}>Меню</CellButton>
-      			<CellButton before={<Avatar shadow={false} size={40}><Icon28GraphOutline /></Avatar>}>Рейтинг</CellButton>
-      			<CellButton before={<Avatar shadow={false} size={40}><Icon24StorefrontOutline /></Avatar>}>Магазин</CellButton>
+       			<CellButton before={<Avatar shadow={false} size={40}><Icon24MenuOutline />Меню</Avatar>}></CellButton>
+      			<CellButton before={<Avatar shadow={false} size={40}><Icon28GraphOutline />Рейтинг</Avatar>}></CellButton>
+      			<CellButton before={<Avatar shadow={false} size={40}><Icon24StorefrontOutline />Магазин</Avatar>}></CellButton>
      		</Div>
 		</Group>
 	</Panel>
