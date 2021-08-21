@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/panels/home.css"],"names":[],"mappings":"AAAA,gBACE,YACF,CAEA,oBACE,SAAU,CACV,aAAc,CACd,eACF,CAEA,oBACE,eACF","file":"main.3eed40bd.chunk.css","sourcesContent":[".navigation-bar {\n  display: flex;\n}\n\n.navigation-button1 {\n  width: 30%;\n  display: block;\n  margin-right: 2%;\n}\n\n.navigation-button2 {\n  margin-right: 2%;\n}"]}
