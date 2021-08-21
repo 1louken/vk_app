@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Icon24StorefrontOutline, Icon24MenuOutline, Icon28GraphOutline } from '@vkontakte/icons'; 
 
-import { Panel, PanelHeader, Header, CellButton, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
+import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -11,23 +11,12 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group>
 			<Div style={{display: 'flex'}}>
-       			<Button size="l" stretched style={{ marginRight: 8}} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">
-       				Меню
-       			</Button>
-       			<Button size="l" stretched style={{ marginRight: 8}} stretched mode="secondary" before={<Icon28GraphOutline/>} onClick={go} data-to="top">
-       				Рейтинг
-       			</Button>
-       			<Button size="l" stretched style={{}} stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">
-       				Магазин
-       			</Button>
 
-
+       			<Button size="l" stretched style={{ marginRight: 2%}} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">Меню</Button>
+       			<Button size="l" stretched style={{ marginRight: 2%}} stretched mode="secondary" before={<Icon28GraphOutline/>} onClick={go} data-to="top">Рейтинг</Button>
+       			<Button size="l" stretched style={{}} stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">Магазин</Button>
+       		
        		</Div>
-       		<Div>
-       			<CellButton before={<Avatar shadow={false} size={40}><Icon24MenuOutline />Меню</Avatar>}></CellButton>
-      			<CellButton before={<Avatar shadow={false} size={40}><Icon28GraphOutline />Рейтинг</Avatar>}></CellButton>
-      			<CellButton before={<Avatar shadow={false} size={40}><Icon24StorefrontOutline />Магазин</Avatar>}></CellButton>
-     		</Div>
 		</Group>
 	</Panel>
 );
