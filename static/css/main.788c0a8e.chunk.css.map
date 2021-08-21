@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/panels/home.css"],"names":[],"mappings":"AAAA,gBACE,YACF,CAMA,wCACE,eACF","file":"main.788c0a8e.chunk.css","sourcesContent":[".navigation-bar {\n  display: flex;\n}\n\n.navigation-button1 {\n  margin-right: 2%;\n}\n\n.navigation-button2 {\n  margin-right: 2%;\n}"]}
