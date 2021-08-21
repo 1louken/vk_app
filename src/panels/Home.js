@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Icon24StorefrontOutline, Icon24MenuOutline, Icon28GraphOutline } from '@vkontakte/icons'; 
 
-import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
+import { Panel, PanelHeader, Header, CellButton, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
