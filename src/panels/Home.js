@@ -5,16 +5,18 @@ import { Icon24StorefrontOutline, Icon24MenuOutline, Icon28GraphOutline } from '
 
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
+import './home.css';
+
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>App</PanelHeader>
 
 		<Group>
-			<Div style={{display: 'flex'}}>
+			<Div className='navigation-bar'>
 
-       			<Button size="l" stretched style={{ marginRight: 2%}} stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">Меню</Button>
-       			<Button size="l" stretched style={{ marginRight: 2%}} stretched mode="secondary" before={<Icon28GraphOutline/>} onClick={go} data-to="top">Рейтинг</Button>
-       			<Button size="l" stretched style={{}} stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">Магазин</Button>
+       			<Button size="l" stretched className='navigation-button1' stretched mode="secondary" before={<Icon24MenuOutline/>} onClick={go} data-to="menu">Меню</Button>
+       			<Button size="l" stretched className='navigation-button2' stretched mode="secondary" before={<Icon28GraphOutline/>} onClick={go} data-to="top">Рейтинг</Button>
+       			<Button size="l" stretched className='navigation-button3' stretched mode="secondary" before={<Icon24StorefrontOutline/>} onClick={go} data-to="store">Магазин</Button>
        		
        		</Div>
 		</Group>
