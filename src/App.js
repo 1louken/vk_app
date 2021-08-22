@@ -33,12 +33,18 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
+	const [likes, setLikes] = useState(0);
+
+	function increment() {
+		setLikes(likes + 1);
+	}
+
 	return (
 		<AdaptivityProvider>
 			<AppRoot>
 				<View activePanel={activePanel} popout={popout}>
-					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<Menu id='menu' go={go} />
+					<Home id='home' fetchedUser={fetchedUser} go={go} likes={likes} increment={increment}/>
+					<Menu id='menu' fetchedUser={fetchedUser} go={go} />
 					<Top id='top' go={go} />
 					<Store id='store' go={go} />
 				</View>
