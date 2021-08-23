@@ -12,7 +12,7 @@ const Menu = props => (
 		<Group header={<Header mode="secondary">Ваш профиль: </Header>}>
 			<Link  className='profile_href' href={"https://vk.com/id" + props.fetchedUser.id}>
 				<Cell
-					before={props.fetchedUser.photo_200 ? <Avatar src={props.fetchedUser.photo_200}/> : null}
+					disabled before={props.fetchedUser.photo_200 ? <Avatar src={props.fetchedUser.photo_200}/> : null}
 					description={"Ваш id: " + props.fetchedUser.id}
 				>
 					{`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`}

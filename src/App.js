@@ -8,6 +8,7 @@ import Menu from './panels/Menu';
 import Top from './panels/Top';
 import Store from './panels/Store';
 
+
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);

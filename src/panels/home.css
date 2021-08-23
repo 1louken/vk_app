@@ -1,5 +1,6 @@
 .navigation-bar {
   display: flex;
+  height: 90%
 }
 
 .navigation-button1 {
@@ -26,10 +27,15 @@
 }
 
 .textch {
-	margin: 3% auto;
-	text-align: center
+	margin: 1% auto;
+	text-align: center;
+	font-size: 250%;
 }
 
 .profile_href {
 	text-decoration: none;
+}
+
+.text_head1 {
+	text-align: center
 }
